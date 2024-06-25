@@ -5,7 +5,8 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-html, body {
+html,
+body {
     min-height: 100vh;
 }
 
@@ -15,34 +16,68 @@ body {
     overflow-x: hidden;
 }
 
-.h-screen{
+.h-screen {
     height: 100vh;
 }
 
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
+
+.skill-card {
+    @extend .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1; // Eredita le classi
   
+    .skill-card-content {
+      @extend .d-flex, .flex-column, .align-items-center, .m-2, .p-2, .bg-body, .shadow, .rounded-1; // Eredita per il contenuto
+  
+      h3 {
+        @extend .text-center;
+      }
+  
+      img {
+        @extend .img-fluid;
+        height: 150px
+      }
+  
+      p {
+        @extend .text-center;
+        padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
+      }
+      flex-grow: 1;
+      align-content: center;
+    }
+    
+    height: 100%;
+  }
+
+.typewriter h1 {
+    overflow: hidden;
+    border-right: .15em solid $warning;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+}
+
 /* The typing effect */
 @keyframes typing {
-from { width: 0 }
-to { width: 100% }
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-from, to { border-color: transparent }
-50% { border-color: $warning; }
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: $warning;
+    }
 }
-
-
-
-
-

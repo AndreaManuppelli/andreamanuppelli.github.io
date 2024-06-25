@@ -706,7 +706,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid, .skill-card .skill-card-content img {
   max-width: 100%;
   height: auto;
 }
@@ -7424,7 +7424,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .skill-card .skill-card-content, .skill-card {
   display: flex !important;
 }
 
@@ -7436,7 +7436,7 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow {
+.shadow, .skill-card .skill-card-content {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -7816,7 +7816,7 @@ textarea.form-control-lg {
   flex-direction: row !important;
 }
 
-.flex-column {
+.flex-column, .skill-card .skill-card-content, .skill-card {
   flex-direction: column !important;
 }
 
@@ -7888,7 +7888,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .skill-card .skill-card-content {
   align-items: center !important;
 }
 
@@ -7988,7 +7988,7 @@ textarea.form-control-lg {
   margin: 0.25rem !important;
 }
 
-.m-2 {
+.m-2, .skill-card .skill-card-content {
   margin: 0.5rem !important;
 }
 
@@ -8198,11 +8198,11 @@ textarea.form-control-lg {
   padding: 0.25rem !important;
 }
 
-.p-2 {
+.p-2, .skill-card .skill-card-content {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .skill-card {
   padding: 1rem !important;
 }
 
@@ -8536,7 +8536,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center {
+.text-center, .skill-card .skill-card-content p, .skill-card .skill-card-content h3, .skill-card .skill-card-content .h3 {
   text-align: center !important;
 }
 
@@ -8929,7 +8929,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-info {
+.bg-info, .skill-card {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8954,7 +8954,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-body {
+.bg-body, .skill-card .skill-card-content {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9026,7 +9026,7 @@ textarea.form-control-lg {
   background-color: var(--bs-dark-bg-subtle) !important;
 }
 
-.bg-gradient {
+.bg-gradient, .skill-card {
   background-image: var(--bs-gradient) !important;
 }
 
@@ -9064,7 +9064,7 @@ textarea.form-control-lg {
   border-radius: 0 !important;
 }
 
-.rounded-1 {
+.rounded-1, .skill-card .skill-card-content, .skill-card {
   border-radius: var(--bs-border-radius-sm) !important;
 }
 
@@ -12154,7 +12154,8 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-html, body {
+html,
+body {
   min-height: 100vh;
 }
 
@@ -12168,12 +12169,26 @@ body {
   height: 100vh;
 }
 
+.skill-card {
+  height: 100%;
+}
+.skill-card .skill-card-content {
+  flex-grow: 1;
+  align-content: center;
+}
+.skill-card .skill-card-content img {
+  height: 150px;
+}
+.skill-card .skill-card-content p {
+  padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
+}
+
 .typewriter h1, .typewriter .h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  overflow: hidden;
+  border-right: 0.15em solid #f0c204;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
