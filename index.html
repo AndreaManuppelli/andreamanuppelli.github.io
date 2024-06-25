@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Manuppeli</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <header>
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-0 border-1 border-warning">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="contactModalLabel">Modal title</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Ciao</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="row bg-primary bg-gradient fixed-top">
+            <div class="col-12 d-flex justify-content-around align-items-center p-2">
+                <div class="typewriter">
+                    <h1 class="text-white fs-5 p-0 m-0">Andrea Manuppelli</h1>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3">
+                    <a class="text-white" href="https://github.com/AndreaManuppelli"><i
+                            class="bi bi-house px-2"></i>Home</a>
+                    <a href="www.linkedin.com/in/andrea-manuppelli-3442a6203"><i
+                            class="bi bi-wallet-fill px-2"></i>Portfolio</a>
+                    <a href="https://github.com/AndreaManuppelli"><i class="bi bi-file-earmark-text px-2"></i>Curriculum</a>
+                </div>
+                <div class="d-none d-md-flex align-items-center gap-3">
+                    <button class="btn btn-info border-1 shadow" data-bs-toggle="modal"
+                        data-bs-target="#contactModal"><i class="bi bi-send-fill px-2"></i>Send
+                        me
+                        message</button>
+                    <a href="https://github.com/AndreaManuppelli" target="_blank" class="text-white"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea-manuppelli-3442a6203" target="_blank"
+                        class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <button class="btn btn-info d-md-none align-self-end" data-bs-toggle="collapse"
+                    data-bs-target="#collapseNav"><i class="bi bi-list px-2"></i></button>
+            </div>
+            <div class="collapse shadow border-bottom border-warning d-md-none" id="collapseNav">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but
+                    revealed
+                    when the user activates the relevant trigger.
+                </div>
+            </div>
+
+        </nav>
+        <div class="pt-3 text-trasparent">
+            <p class="opacity-0">nav space</p>
+        </div>
+    </header>
+
+
+
+    <main class="container-fluid">
+
+
+
+
+
+        <div class="row border-bottom border-warning-subtle pb-3">
+            <section class="col-12 col-md-6 h-100 animate__animated animate__zoomInRight">
+                <div class="d-flex flex-column bg-gradient">
+                    <div class="d-flex flex-column align-items-center">
+                        <img src="assets/img/face.png"
+                            class="img-fluid opacity-75 animate__animated animate__flipInY animate__delay-1s"
+                            alt="face of Andrea Manuppelli">
+                        <h1 class="text-center">Andrea Manuppelli</h1>
+                        <p class="text-center">Full Stack Web Developer</p>
+                    </div>
+                </div>
+            </section>
+            <article class="col-12 col-md-6 d-flex align-items-center animate__animated animate__zoomInLeft">
+                <div class="container-fluid bg-info bg-gradient fs-6 py-3">
+                    <h2><strong>Full-Stack Web Developer</strong></h2>
+
+                    <p><strong>Expert in Angular, Django, and Node.js</strong></p>
+
+                    <p>I am a highly skilled full-stack developer with a passion for building modern, scalable web
+                        applications. I have a proven track record of delivering high-quality results in both
+                        front-end and back-end development.</p>
+
+                    <p><strong>My Expertise:</strong></p>
+                    <ul>
+                        <li><strong>Front-end:</strong> Angular, JavaScript, TypeScript, HTML, CSS, SCSS</li>
+                        <li><strong>Back-end:</strong> Django (Python), Node.js, RESTful APIs</li>
+                        <li><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB</li>
+                        <li><strong>Additional Skills:</strong> DevOps, Testing, Git, Agile</li>
+                    </ul>
+
+                    <p>I am a motivated problem-solver who thrives in collaborative environments. I am always eager
+                        to learn and apply new technologies to create innovative solutions.</p>
+
+
+                </div>
+                </secttion>
+
+        </div>
+        <div class="row py-2 text-white">
+            <section class="col-12">
+                <div class="d-flex flex-column bg-primary p-3">
+                    <div class="d-flex flex-column align-items-center">
+                        <h2 class="text-center">My technologies</h2>
+                        <p class="text-center">or... my toolbox</p>
+                    </div>
+                </div>
+            </section>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column bg-info bg-gradient p-3">
+                            <div class="d-flex flex-column align-items-center">
+                                <h3 class="text-center">Front-end</h3>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="text-center">Angular, JavaScript, TypeScript, HTML, CSS, SCSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column bg-info bg-gradient p-3">
+                            <div class="d-flex flex-column align-items-center">
+                                <h3 class="text-center">Back-end</h3>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="text-center">Django (Python), Node.js, RESTful APIs</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column bg-info bg-gradient p-3">
+                            <div class="d-flex flex-column align-items-center">
+                                <h3 class="text-center">Databases</h3>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="text-center">PostgreSQL, MySQL, MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="d-flex flex-column bg-info bg-gradient p-3">
+                            <div class="d-flex flex-column align-items-center">
+                                <h3 class="text-center">Additional Skills</h3>
+                            </div>
+                            <div class="d-flex flex-column align-items-center">
+                                <p class="text-center">DevOps, Testing, Git, Agile</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="bg-dark text-white">
+        <div class="container-fluid">
+            <div class="row border-top border-info">
+                <div class="col-12 d-flex justify-content-center align-items-center p-2">
+                    <p class="m-0">Made with <i class="bi bi-heart-fill text-danger"></i> by Andrea Manuppelli</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+
+</html>
