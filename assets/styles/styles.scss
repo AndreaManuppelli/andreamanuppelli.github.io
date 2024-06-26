@@ -31,10 +31,10 @@ body {
 }
 
 
-.skill-card {
-    @extend .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1; // Eredita le classi
+.card {
+    @extend  .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1; // Eredita le classi
   
-    .skill-card-content {
+    .card-content {
       @extend .d-flex, .flex-column, .align-items-center, .m-2, .p-2, .bg-body, .shadow, .rounded-1; // Eredita per il contenuto
   
       h3 {
@@ -52,6 +52,12 @@ body {
       }
       flex-grow: 1;
       align-content: center;
+
+      &:hover {
+        @extend .shadow-lg;
+        
+      }
+
     }
     
     height: 100%;
@@ -67,6 +73,7 @@ body {
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
 }
+
 
 /* The typing effect */
 @keyframes typing {

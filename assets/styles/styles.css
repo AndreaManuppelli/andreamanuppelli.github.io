@@ -708,7 +708,7 @@ progress {
   content: "— ";
 }
 
-.img-fluid, .skill-card .skill-card-content img {
+.img-fluid, .card .card-content img {
   max-width: 100%;
   height: auto;
 }
@@ -7426,7 +7426,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .skill-card .skill-card-content, .skill-card {
+.d-flex, .card .card-content, .card {
   display: flex !important;
 }
 
@@ -7438,7 +7438,7 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow, .skill-card .skill-card-content {
+.shadow, .card .card-content {
   box-shadow: var(--bs-box-shadow) !important;
 }
 
@@ -7446,7 +7446,7 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow-sm) !important;
 }
 
-.shadow-lg {
+.shadow-lg, .card .card-content:hover {
   box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
@@ -7818,7 +7818,7 @@ textarea.form-control-lg {
   flex-direction: row !important;
 }
 
-.flex-column, .skill-card .skill-card-content, .skill-card {
+.flex-column, .card .card-content, .card {
   flex-direction: column !important;
 }
 
@@ -7890,7 +7890,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center, .skill-card .skill-card-content {
+.align-items-center, .card .card-content {
   align-items: center !important;
 }
 
@@ -7990,7 +7990,7 @@ textarea.form-control-lg {
   margin: 0.25rem !important;
 }
 
-.m-2, .skill-card .skill-card-content {
+.m-2, .card .card-content {
   margin: 0.5rem !important;
 }
 
@@ -8200,11 +8200,11 @@ textarea.form-control-lg {
   padding: 0.25rem !important;
 }
 
-.p-2, .skill-card .skill-card-content {
+.p-2, .card .card-content {
   padding: 0.5rem !important;
 }
 
-.p-3, .skill-card {
+.p-3, .card {
   padding: 1rem !important;
 }
 
@@ -8538,7 +8538,7 @@ textarea.form-control-lg {
   text-align: right !important;
 }
 
-.text-center, .skill-card .skill-card-content p, .skill-card .skill-card-content h3, .skill-card .skill-card-content .h3 {
+.text-center, .card .card-content p, .card .card-content h3, .card .card-content .h3 {
   text-align: center !important;
 }
 
@@ -8931,7 +8931,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-info, .skill-card {
+.bg-info, .card {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -8956,7 +8956,7 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-white-rgb), var(--bs-bg-opacity)) !important;
 }
 
-.bg-body, .skill-card .skill-card-content {
+.bg-body, .card .card-content {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-body-bg-rgb), var(--bs-bg-opacity)) !important;
 }
@@ -9028,7 +9028,7 @@ textarea.form-control-lg {
   background-color: var(--bs-dark-bg-subtle) !important;
 }
 
-.bg-gradient, .skill-card {
+.bg-gradient, .card {
   background-image: var(--bs-gradient) !important;
 }
 
@@ -9066,7 +9066,7 @@ textarea.form-control-lg {
   border-radius: 0 !important;
 }
 
-.rounded-1, .skill-card .skill-card-content, .skill-card {
+.rounded-1, .card .card-content, .card {
   border-radius: var(--bs-border-radius-sm) !important;
 }
 
@@ -12175,20 +12175,19 @@ body {
   height: 100vh;
 }
 
-.skill-card {
+.card {
   height: 100%;
 }
-.skill-card .skill-card-content {
+.card .card-content {
   flex-grow: 1;
   align-content: center;
 }
-.skill-card .skill-card-content img {
+.card .card-content img {
   height: 150px;
 }
-.skill-card .skill-card-content p {
+.card .card-content p {
   padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
 }
-
 .typewriter h1, .typewriter .h1 {
   overflow: hidden;
   border-right: 0.15em solid #f0c204;
