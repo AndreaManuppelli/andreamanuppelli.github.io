@@ -22,29 +22,29 @@
         <!-- Modal -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content rounded-0">
-                    <div class="modal-header">
+                <form action="https://formsubmit.co/andreamanuppelli@gmail.com" method="POST" class="modal-content rounded-0">
+                    <div class="modal-header d-flex justify-content-between">
                         <h1 class="modal-title fs-5" id="contactModalLabel">Contact me</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x"></i></button>
                     </div>
                     <div class="modal-body">
-                        <form>
+                        <div>
                             <div class="row">
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="First name" required>
+                                    <input name="first" type="text" class="form-control" placeholder="First name" required>
                                 </div>
                                 <div class="col-6">
-                                    <input type="text" class="form-control" placeholder="Last name" required>
+                                    <input name="last" type="text" class="form-control" placeholder="Last name" required>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-12">
-                                    <input type="email" class="form-control" placeholder="Email" required>
+                                    <input name="email" type="email" class="form-control" placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-12">
-                                    <textarea class="form-control" placeholder="Message" required></textarea>
+                                    <textarea name="message" class="form-control" placeholder="Message" required></textarea>
                                 </div>
                             </div>
                             <div class="row mt-2">
@@ -57,13 +57,13 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary w-100"><i class="bi bi-send-fill px-2"></i>Send
+                        <button type="submit" class="btn btn-secondary w-100"><i class="bi bi-send-fill px-2"></i>Send
                             message</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 

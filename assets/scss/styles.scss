@@ -69,8 +69,8 @@ body {
       /* animation on hover */
       &:hover {
         @extend .shadow-lg;
-        transform: perspective(1000px) translate3d(0, -15px, 15px);
-        opacity: 0.75;
+        transform: perspective(1000px) translate3d(0px, -15px, 15px);
+        opacity: 0.8;
         scale: 1.05;
 
         
@@ -88,7 +88,9 @@ body {
       transform: perspective(1000px) translate3d(0, -10px, 0);
       
       
+      
     }
+    
 
     
    
@@ -129,3 +131,5 @@ body {
         border-color: $warning;
     }
 }
+
+
