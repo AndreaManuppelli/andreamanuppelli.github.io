@@ -9066,7 +9066,7 @@ textarea.form-control-lg {
   border-radius: 0 !important;
 }
 
-.rounded-1, .card .card-content, .card {
+.rounded-1, .card .card-content img, .card .card-content, .card {
   border-radius: var(--bs-border-radius-sm) !important;
 }
 
@@ -12181,6 +12181,9 @@ body {
 .card .card-content {
   flex-grow: 1;
   align-content: center;
+}
+.card .card-content img {
+  height: 150px;
 }
 .card .card-content p {
   padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
