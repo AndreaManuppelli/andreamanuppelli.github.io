@@ -12182,6 +12182,9 @@ body {
   flex-grow: 1;
   align-content: center;
 }
+.card .card-content h3, .card .card-content .h3 {
+  color: white;
+}
 .card .card-content img {
   height: 150px;
 }
