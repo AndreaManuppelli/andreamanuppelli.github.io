@@ -12080,7 +12080,8 @@ body {
   padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
 }
 .card .card-content:hover {
-  transform: perspective(1000px) translate3d(0, 0, 15px);
+  transform: perspective(1000px) translate3d(0, -15px, 15px);
+  opacity: 0.75;
 }
 .card:hover {
   transform: perspective(1000px) translate3d(0, -10px, 0);

@@ -69,7 +69,8 @@ body {
       /* animation on hover */
       &:hover {
         @extend .shadow-lg;
-        transform: perspective(1000px) translate3d(0, 0, 15px);
+        transform: perspective(1000px) translate3d(0, -15px, 15px);
+        opacity: 0.75;
         
       }
 
@@ -83,6 +84,7 @@ body {
     &:hover {
       @extend .shadow-lg;
       transform: perspective(1000px) translate3d(0, -10px, 0);
+      
       
     }
 
