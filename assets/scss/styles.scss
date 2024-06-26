@@ -39,7 +39,7 @@ body {
 
 
 .card {
-    @extend  .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1,; // Eredita le classi
+    @extend  .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1, .h-100; // Eredita le classi
   
     .card-content {
       @extend .d-flex, .flex-column, .align-items-center, .m-2, .p-2, .bg-body, .shadow, .rounded-1; // Eredita per il contenuto
@@ -62,7 +62,8 @@ body {
 
 
       flex-grow: 1;
-      align-items: center;
+      
+      
       transition: all 0.25s;
 
       /* animation on hover */
@@ -85,7 +86,7 @@ body {
       
     }
 
-    height: 100%;
+    
    
   }
 

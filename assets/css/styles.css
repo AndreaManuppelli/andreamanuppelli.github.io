@@ -7736,7 +7736,7 @@ textarea.form-control-lg {
   height: 75% !important;
 }
 
-.h-100 {
+.h-100, .card {
   height: 100% !important;
 }
 
@@ -12064,11 +12064,9 @@ body {
 .card {
   transition: all 0.25s;
   /* animation on hover */
-  height: 100%;
 }
 .card .card-content {
   flex-grow: 1;
-  align-items: center;
   transition: all 0.25s;
   /* animation on hover */
 }
