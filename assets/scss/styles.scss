@@ -1,6 +1,7 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
 
+
 @import './variables';
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
@@ -12,7 +13,7 @@
 
 html,
 body {
-    min-height: 100vh;
+    min-height: 100vh !important;
 }
 
 *{

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Manuppeli</title>
-    <link rel="stylesheet" href="/assets/styles/styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
@@ -28,7 +28,16 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Ciao</p>
+                        <form>
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="First name">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name">
+                              </div>
+                            </div>
+                          </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -145,11 +154,23 @@
 
                 </div>
             </article>
-            <section class="d-flex d-md-none justify-content-around align-items-center mt-3 fs-1">
-                <a href="https://github.com/AndreaManuppelli" target="_blank" class="text-white"><i
-                    class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/andrea-manuppelli-3442a6203" target="_blank"
-                    class="text-white"><i class="bi bi-linkedin"></i></a>
+
+            <!-- hide this on wide screen because it's in navbar -->
+            <section class="row d-md-none mt-3 p-0 m-0">
+                <div class="col-12 d-flex justify-content-center">
+                    <button class="btn btn-info border-1 shadow w-100" data-bs-toggle="modal"
+                        data-bs-target="#contactModal"><i class="bi bi-send-fill px-2"></i>Send
+                        me
+                        message</button>
+                </div>
+                <div class="col-12 d-flex  justify-content-around align-items-center mt-3 fs-1">
+                    <a href="https://github.com/AndreaManuppelli" target="_blank" class="text-white"><i
+                        class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/andrea-manuppelli-3442a6203" target="_blank"
+                        class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+                
+                
             </section>
 
         </div>

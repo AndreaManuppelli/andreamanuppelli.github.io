@@ -48,3 +48,11 @@ $dark:                         #011b2a;   // Blu notte profondo (primary)
 $spacer:                       1rem;
 $enable-shadows:               false;    // Disabilita le ombre
 $gradient:                     linear-gradient(180deg, #011b2a, #05465a); // Gradiente blu-turchese (opzionale)
+
+
+
+$focus-ring-width:      .25rem;
+$focus-ring-opacity:    .25;
+$focus-ring-color:      rgba($warning, $focus-ring-opacity);
+$focus-ring-blur:       0;
+$focus-ring-box-shadow: 0 0 $focus-ring-blur $focus-ring-width $focus-ring-color;
