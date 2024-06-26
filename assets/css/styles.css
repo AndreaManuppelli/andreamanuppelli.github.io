@@ -12059,7 +12059,9 @@ body {
 }
 .card .card-content {
   flex-grow: 1;
-  align-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  /* animation on hover */
 }
 .card .card-content h3, .card .card-content .h3 {
   color: white;
@@ -12070,6 +12072,10 @@ body {
 .card .card-content p {
   padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
 }
+.card .card-content:hover {
+  transform: perspective(1000px) translate3d(0, 0, 15px);
+}
+
 .typewriter h1, .typewriter .h1 {
   overflow: hidden;
   border-right: 0.15em solid #f0c204;
