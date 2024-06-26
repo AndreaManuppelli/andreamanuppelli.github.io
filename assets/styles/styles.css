@@ -12161,6 +12161,10 @@ body {
   min-height: 100vh;
 }
 
+* {
+  font-family: "Anonymous Pro", monospace !important;
+}
+
 body {
   background-color: #011b2a;
   color: #3e9cb5;
