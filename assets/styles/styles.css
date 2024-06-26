@@ -12182,9 +12182,6 @@ body {
   flex-grow: 1;
   align-content: center;
 }
-.card .card-content img {
-  height: 150px;
-}
 .card .card-content p {
   padding: var(--bs-gutter-x, var(--bs-gutter-x, 0.75rem));
 }
