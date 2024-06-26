@@ -12082,6 +12082,7 @@ body {
 .card .card-content:hover {
   transform: perspective(1000px) translate3d(0, -15px, 15px);
   opacity: 0.75;
+  scale: 1.05;
 }
 .card:hover {
   transform: perspective(1000px) translate3d(0, -10px, 0);
