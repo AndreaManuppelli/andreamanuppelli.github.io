@@ -27,8 +27,14 @@ body {
     overflow-x: hidden;
 }
 
-.h-screen {
-    height: 100vh;
+/* scrollbar edit */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $secondary; 
+  border-radius: 0px;
 }
 
 
