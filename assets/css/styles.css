@@ -12060,7 +12060,7 @@ body {
 .card .card-content {
   flex-grow: 1;
   align-items: center;
-  transition: all 0.3s;
+  transition: all 0.25s;
   /* animation on hover */
 }
 .card .card-content h3, .card .card-content .h3 {
