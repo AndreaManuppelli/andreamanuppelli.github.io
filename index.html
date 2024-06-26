@@ -24,24 +24,44 @@
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content rounded-0">
                     <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="contactModalLabel">Modal title</h1>
+                        <h1 class="modal-title fs-5" id="contactModalLabel">Contact me</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <form>
                             <div class="row">
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="First name">
-                              </div>
-                              <div class="col">
-                                <input type="text" class="form-control" placeholder="Last name">
-                              </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="First name" required>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Last name" required>
+                                </div>
                             </div>
-                          </form>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <input type="email" class="form-control" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <textarea class="form-control" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 d-flex justify-content-center">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required>
+                                        <label class="form-check-label" for="flexCheckIndeterminate">
+                                            I agree to recive updates
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-secondary w-100"><i class="bi bi-send-fill px-2"></i>Send
+                            message</button>
                     </div>
                 </div>
             </div>
@@ -165,12 +185,12 @@
                 </div>
                 <div class="col-12 d-flex  justify-content-around align-items-center mt-3 fs-1">
                     <a href="https://github.com/AndreaManuppelli" target="_blank" class="text-white"><i
-                        class="bi bi-github"></i></a>
+                            class="bi bi-github"></i></a>
                     <a href="https://www.linkedin.com/in/andrea-manuppelli-3442a6203" target="_blank"
                         class="text-white"><i class="bi bi-linkedin"></i></a>
                 </div>
-                
-                
+
+
             </section>
 
         </div>
@@ -430,8 +450,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </section>
 
 
