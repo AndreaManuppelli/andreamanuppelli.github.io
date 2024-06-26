@@ -7392,7 +7392,7 @@ textarea.form-control-lg {
   box-shadow: var(--bs-box-shadow-sm) !important;
 }
 
-.shadow-lg, .card .card-content:hover {
+.shadow-lg, .card:hover, .card .card-content:hover {
   box-shadow: var(--bs-box-shadow-lg) !important;
 }
 
@@ -12055,6 +12055,8 @@ body {
 }
 
 .card {
+  transition: all 0.25s;
+  /* animation on hover */
   height: 100%;
 }
 .card .card-content {
@@ -12074,6 +12076,9 @@ body {
 }
 .card .card-content:hover {
   transform: perspective(1000px) translate3d(0, 0, 15px);
+}
+.card:hover {
+  transform: perspective(1000px) translate3d(0, -10px, 0);
 }
 
 .typewriter h1, .typewriter .h1 {

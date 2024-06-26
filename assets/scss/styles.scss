@@ -69,6 +69,15 @@ body {
       
 
     }
+
+    transition: all 0.25s;
+
+    /* animation on hover */
+    &:hover {
+      @extend .shadow-lg;
+      transform: perspective(1000px) translate3d(0, -10px, 0);
+      
+    }
     
     height: 100%;
   }
