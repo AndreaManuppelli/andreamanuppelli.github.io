@@ -5,9 +5,15 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-html,
-body {
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
     min-height: 100vh;
+}
+
+*{
+
+    font-family: "Anonymous Pro", monospace !important;
 }
 
 body {
