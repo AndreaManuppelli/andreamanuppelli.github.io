@@ -2,4 +2,5 @@
 
 ![alt text](https://github.com/AndreaManuppelli/andreamanuppelli.github.io/blob/main/assets/img/docs/preview.png?raw=true)
 
-![alt text](https://andreamanuppelli.github.io/ "See website preview")
+
+[I'm an inline-style link](https://andreamanuppelli.github.io/)
