@@ -497,6 +497,16 @@
     <!-- End of Footer -->
 
     <!-- Contact Modal (hidden) -->
+    <script type="text/javascript">
+
+        // bootrap modal from docs
+        const contactModal = document.getElementById('contactModal')
+        const modalOpener = document.getElementById('modalOpener')
+
+        contactModal.addEventListener('shown.bs.modal', () => {
+        modalOpener.focus()
+        })
+    </script>
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <form action="https://formspree.io/f/xnnaaydo" method="POST"
@@ -548,7 +558,6 @@
     </div>
     <!-- End of Contact Modal -->
 
-    <script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 
 </html>
