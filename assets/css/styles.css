@@ -1142,7 +1142,6 @@ progress {
   .gx-sm-1 {
     --bs-gutter-x: 0.25rem;
   }
-  
   .g-sm-1,
   .gy-sm-1 {
     --bs-gutter-y: 0.25rem;
@@ -12061,6 +12060,7 @@ body {
   border-radius: 0px;
 }
 
+/* card edit */
 .card {
   transition: all 0.25s;
   /* animation on hover */
