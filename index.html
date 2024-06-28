@@ -61,31 +61,25 @@
                     data-bs-target="#collapseNav"><i class="bi bi-list px-2"></i></button>
             </div>
             <div class="collapse shadow border-bottom border-warning d-md-none" id="collapseNav">
-                <div class="card card-body">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="p-3">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center gap-3">
+                        <li class="nav-item text-white">
+                            <a class="text-white" href="/"><i
+                                class="bi bi-house px-2"></i>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="text-white" href="/"><i class="bi bi-house px-2"></i>Home</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
+                            <a href="/portfolio/"><i
+                                class="bi bi-wallet-fill px-2"></i>Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a href="/cv/"><i
+                                class="bi bi-file-earmark-text px-2"></i>Curriculum</a>
                         </li>
+                        <button class="btn btn-info border-1 shadow" data-bs-target="#contactModal" data-bs-toggle="modal">
+                            <i class="bi bi-send-fill px-2"></i>Send
+                            me
+                            message
+                        </button>
                     </ul>
                 </div>
             </div>
