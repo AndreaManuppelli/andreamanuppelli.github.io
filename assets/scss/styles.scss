@@ -146,4 +146,7 @@ a{
 }
 
 
-
+// override all modals color
+.modal-content {
+  @extend .bg-primary;
+}
