@@ -7373,7 +7373,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .card .card-content {
+.d-flex, .card .card-content, .card {
   display: flex !important;
 }
 
@@ -7765,7 +7765,7 @@ textarea.form-control-lg {
   flex-direction: row !important;
 }
 
-.flex-column, .card .card-content {
+.flex-column, .card .card-content, .card {
   flex-direction: column !important;
 }
 
@@ -12064,9 +12064,10 @@ body {
 .card {
   transition: all 0.25s;
   /* animation on hover */
+  flex-grow: 1;
 }
 .card .card-content {
-  flex-grow: 1;
+  height: 100%;
   transition: all 0.25s;
   /* animation on hover */
 }
