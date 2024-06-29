@@ -122,7 +122,7 @@
             
 
             
-            <div class="col-12 col-md-6 col-lg-4">
+            <article class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-content">
                         <h3 class="fs-4">This portfolio<br>Bootstrap 5</h3>
@@ -133,8 +133,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            </article>
+            <article class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-content">
                         <h3 class="fs-4">Primeflex<br>Landing Page</h3>
@@ -145,8 +145,8 @@
                         </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            </article>
+            <article class="col-12 col-md-6 col-lg-4">
                 <div class="card">
                     <div class="card-content">
                         <h3 class="fs-4">Django | Angular<br>Bitcoin Paywall</h3>
@@ -158,7 +158,7 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </article>
 
 
         </section>
@@ -180,16 +180,7 @@
     <!-- End of Footer -->
 
     <!-- Contact Modal (hidden) -->
-    <script type="text/javascript">
-
-        // bootrap modal from docs
-        const contactModal = document.getElementById('contactModal')
-        const modalOpener = document.getElementById('modalOpener')
-
-        contactModal.addEventListener('shown.bs.modal', () => {
-        modalOpener.focus()
-        })
-    </script>
+    
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <form action="https://formspree.io/f/xnnaaydo" method="POST"
@@ -240,6 +231,8 @@
         </div>
     </div>
     <!-- End of Contact Modal -->
+
+    <script src="/assets/js/bootstrap-modal.js"></script>
 
 </body>
 
