@@ -12094,7 +12094,7 @@ a {
   transform: perspective(1000px) translate3d(0, -10px, 0);
 }
 
-.typewriter h1 h2 h3 h4, .typewriter .h1 h2 h3 h4, .typewriter h1 .h2 h3 h4, .typewriter .h1 .h2 h3 h4, .typewriter h1 h2 .h3 h4, .typewriter .h1 h2 .h3 h4, .typewriter h1 .h2 .h3 h4, .typewriter .h1 .h2 .h3 h4, .typewriter h1 h2 h3 .h4, .typewriter .h1 h2 h3 .h4, .typewriter h1 .h2 h3 .h4, .typewriter .h1 .h2 h3 .h4, .typewriter h1 h2 .h3 .h4, .typewriter .h1 h2 .h3 .h4, .typewriter h1 .h2 .h3 .h4, .typewriter .h1 .h2 .h3 .h4 {
+.typewriter h1, .typewriter .h1 {
   overflow: hidden;
   border-right: 0.15em solid #f0c204;
   white-space: nowrap;
