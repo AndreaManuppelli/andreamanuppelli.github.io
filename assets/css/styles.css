@@ -7373,7 +7373,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex, .card .card-content, .card {
+.d-flex, .card .card-content {
   display: flex !important;
 }
 
@@ -7765,7 +7765,7 @@ textarea.form-control-lg {
   flex-direction: row !important;
 }
 
-.flex-column, .card .card-content, .card {
+.flex-column, .card .card-content {
   flex-direction: column !important;
 }
 
@@ -7817,7 +7817,7 @@ textarea.form-control-lg {
   justify-content: center !important;
 }
 
-.justify-content-between {
+.justify-content-between, .card .card-content {
   justify-content: space-between !important;
 }
 

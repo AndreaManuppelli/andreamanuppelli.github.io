@@ -36,10 +36,10 @@ body {
 
 /* card edit */
 .card {
-    @extend  .d-flex, .flex-column, .bg-info, .bg-gradient, .p-3, .rounded-1, .h-100; 
+    @extend .bg-info, .bg-gradient, .p-3, .rounded-1, .h-100; 
   
     .card-content {
-      @extend .d-flex, .flex-column, .align-items-center, .m-2, .p-2, .bg-body, .shadow, .rounded-1;
+      @extend .d-flex, .flex-column, .justify-content-between, .align-items-center, .m-2, .p-2, .bg-body, .shadow, .rounded-1;
   
       h3 {
         @extend .text-center;
